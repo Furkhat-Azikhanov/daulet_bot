@@ -17,7 +17,7 @@ import time
 # Создаем .env файл и загружаем переменные окружения
 def create_env_file():
     env_content = '''TELEGRAM_TOKEN=7844872007:AAFcTUHB6bk1NDnNw-XTnl4TpGxuWAsREYc
-OPENAI_API_KEY=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'''
+OPENAI_API_KEY=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'''
     
     with open('.env', 'w', encoding='utf-8') as f:
         f.write(env_content)
@@ -71,12 +71,12 @@ def get_language_keyboard():
 def get_main_menu_keyboard(lang='ru'):
     if lang == 'ru':
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📝 Пройти тест", url="http://test.aidar-arfc.kz/")],
+            [InlineKeyboardButton(text="📝 Пройти тест", url="http://aidar-arfc.kz/test")],
             [InlineKeyboardButton(text="💬 Консультация", callback_data="consultation")]
         ])
     else:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📝 Тест тапсыру", url="http://test.aidar-arfc.kz/")],
+            [InlineKeyboardButton(text="📝 Тест тапсыру", url="http://aidar-arfc.kz/test")],
             [InlineKeyboardButton(text="💬 Кеңес алу", callback_data="consultation")]
         ])
     return keyboard
