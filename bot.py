@@ -71,12 +71,12 @@ def get_language_keyboard():
 def get_main_menu_keyboard(lang='ru'):
     if lang == 'ru':
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📝 Пройти тест", url="http://aidar-arfc.kz/test")],
+            [InlineKeyboardButton(text="📝 Пройти тест", url="http://89.35.124.179/")],
             [InlineKeyboardButton(text="💬 Консультация", callback_data="consultation")]
         ])
     else:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📝 Тест тапсыру", url="http://aidar-arfc.kz/test")],
+            [InlineKeyboardButton(text="📝 Тест тапсыру", url="http://89.35.124.179/")],
             [InlineKeyboardButton(text="💬 Кеңес алу", callback_data="consultation")]
         ])
     return keyboard
